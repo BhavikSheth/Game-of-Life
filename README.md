@@ -1,31 +1,16 @@
-# React Boilerplate
-A boilerplate for creating React and Redux applications.
-
-As many React development jobs require the knowledge of how to build an environment , I built a boilerplate from scratch for React development to learn how to configure webpack, set up testing environments, implement Babel, and more.
+# Conway's Game of Life Application
+Conway's Game of Life Application written in React and Redux to experiment my newly created boilerplate which can be found by clicking [here](https://github.com/BhavikSheth/my-react-boilerplate). This [FreeCodeCamp project](https://www.freecodecamp.org/challenges/build-the-game-of-life) was used as a starting point.
 
 ## Brief
 
-* **Bundler:** Webpack
-* **Linter:** ESLint
-* **Testing:** Mocha, Chai, and Enzyme
-* **Hot Reloading:** React Hot Loader with Webpack
-* **Local Server:** Webpack Dev Server
-* **CSS Preprocessor:** SASS
-* **Compile ES6 to ES5:** Babel
+* Create a Game of Life app that adheres to the user stories in the linked FreeCodeCamp project
+* Verify that the functionality is correct according to the objective and user stories by employing unit tests
+* Use linked boilerplate to create application
 
 
 ## Get Started
 
-1. **Clone the Project**. `git clone https://github.com/BhavikSheth/my-react-boilerplate.git`.
+1. **Clone the Project**. `git clone https://github.com/BhavikSheth/game-of-life.git`.
 2. **cd into your new directory**.
 3. **Install all dependencies in package.json**. `yarn`.
-4. **Run the app**. `yarn start`.
-
-
-## Ideas
-
-* jest
-* react router
-* file-loader
-* url-loader
-* express server
+4. **Run the app**. `yarn start` then open [http://localhost:6000/](http://localhost:6000/).

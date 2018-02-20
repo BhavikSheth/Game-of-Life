@@ -1,8 +1,8 @@
 {
-  "name": "my-react-boilerplate",
+  "name": "game-of-life",
   "version": "1.0.0",
-  "description": "Boilerplate for creating apps with React and Redux",
-  "main": "src/App.js",
+  "description": "Game of Life Application",
+  "main": "src/index.js",
   "scripts": {
     "start": "concurrently \"yarn test:watch\" \"yarn dev\"",
     "dev": "webpack-dev-server --progress --quiet",
@@ -24,10 +24,7 @@
   ],
   "license": "MIT",
   "author": "Bhavik Sheth <bhavik@bhaviksheth.io> (http://www.bhaviksheth.io/)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BhavikSheth/my-react-boilerplate"
-  },
+  "repository": "https://github.com/BhavikSheth/game-of-life",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
