@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --progress --quiet",
     "build": "webpack",
     "watch": "webpack --watch",
-    "test": "NODE_ENV=test mocha --require babel-register tests/*.js --reporter spec",
+    "test": "NODE_ENV=test mocha --require babel-register src/**/*.spec.js",
     "test:watch": "yarn test --watch",
     "lint": "esw webpack.config.js src tools tests",
     "lint:watch": "yarn lint --watch"
@@ -36,6 +36,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
@@ -72,7 +73,8 @@
       "react"
     ],
     "plugins": [
-      "react-hot-loader/babel"
+      "react-hot-loader/babel",
+      "transform-object-rest-spread"
     ],
     "env": {
       "test": {
