@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: [
     "react-hot-loader/patch",
-    "webpack-dev-server/client?http://localhost:6000",
+    "webpack-dev-server/client?http://localhost:2000",
     "webpack/hot/only-dev-server",
     "./src/index.js",
   ],
@@ -29,7 +29,7 @@ module.exports = {
   devServer: {
     hot: true,
     contentBase: path.resolve(__dirname, "dist"),
-    port: 6000,
+    port: 2000,
   },
   plugins: [
     new webpack.NamedModulesPlugin(),
