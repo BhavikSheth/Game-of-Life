@@ -1,5 +1,10 @@
+import { combineReducers } from "redux";
+import LiveCellsReducer from "./liveCellsReducer";
+
 const rootReducer = () => {
-  console.log("testReducer");
+  combineReducers({
+    liveCells: LiveCellsReducer,
+  });
 };
 
 export default rootReducer;
