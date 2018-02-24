@@ -21,7 +21,7 @@ class GameBoard extends Component {
       <div className="game">
         <div className="game-board">
           {
-            Array.from({ length: 50 }, (row, index) => <BoardRow rowIndex={index}/>)
+            Array.from({ length: 10 }, (row, index) => <BoardRow key={index} rowIndex={index}/>)
           }
         </div>
       </div>

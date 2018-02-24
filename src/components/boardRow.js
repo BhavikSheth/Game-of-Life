@@ -12,7 +12,7 @@ class BoardRow extends Component {
       <div className="board-row">
         {
           // Array.from({ length: 50 }, (cell, index) => this.renderCell(this.props.rowIndex, index))
-          Array.from({length: 50 }, (column, index) => <Cell key={index} rowIndex={this.props.rowIndex} columnIndex={index}/>)
+          Array.from({length: 10 }, (column, index) => <Cell key={index} rowIndex={this.props.rowIndex} columnIndex={index}/>)
         }
       </div>
     );
