@@ -1,7 +1,7 @@
 import { expect } from "chai";
 
-import { ADD_LIVE_CELL, DELETE_LIVE_CELL } from "../constants/actionTypes";
-import { addLiveCell, deleteLiveCell } from "./index";
+import { ADD_LIVE_CELL, DELETE_LIVE_CELL, EVOLVE_CELLS } from "../constants/actionTypes";
+import { addLiveCell, deleteLiveCell, evolveCells } from "./index";
 
 describe("actions", () => {
   describe("addLiveCell", () => {
@@ -27,6 +27,13 @@ describe("actions", () => {
       const action = deleteLiveCell(3, 4);
       expect(action.row).to.equal(3);
       expect(action.column).to.equal(4);
+    });
+  });
+
+  describe("evolveCells", () => {
+    it("has the correct type", () => {
+      const action = evolveCells();
+      expect(action.type).to.equal(EVOLVE_CELLS);
     });
   });
 });
